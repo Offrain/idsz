@@ -254,6 +254,16 @@ async function loadTest() {
     }
 }
 
+function showApp() {
+  document.getElementById("auth").style.display = "none";
+  document.getElementById("app").style.display = "block";
+}
+
+function hideApp() {
+  document.getElementById("auth").style.display = "block";
+  document.getElementById("app").style.display = "none";
+}
+    
 function renderPage(page) {
     const start = (page - 1) * questionsPerPage;
     const end = start + questionsPerPage;
